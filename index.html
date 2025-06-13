@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSync - Fitness & Nutrição Personalizada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-dumbbell text-blue-500 text-2xl"></i>
+                <span class="text-xl font-bold text-blue-600">FitSync</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#servicos" class="font-medium hover:text-blue-500 transition">Serviços</a>
+                <a href="#diferenciais" class="font-medium hover:text-blue-500 transition">Diferenciais</a>
+                <a href="#solucao" class="font-medium hover:text-blue-500 transition">Solução</a>
+                <a href="#planos" class="font-medium hover:text-blue-500 transition">Planos</a>
+                <a href="#contato" class="font-medium hover:text-blue-500 transition">Contato</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="login.html" class="hidden md:block font-medium hover:text-blue-500 transition">Login</a>
+                <a href="register.html" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium transition shadow-md">Comece agora</a>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-image relative h-screen flex items-center">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10 text-white">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Fitness & Nutrição <span class="text-blue-300">Personalizada</span></h1>
+                <p class="text-xl mb-8">Seu plano de treino e dieta criado por profissionais reais, com acompanhamento personalizado e suporte humano.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#cadastro" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium text-lg transition shadow-lg text-center">Experimente grátis</a>
+                    <a href="#planos" class="bg-white hover:bg-gray-100 text-blue-600 px-6 py-3 rounded-lg font-medium text-lg transition shadow-lg text-center">Ver planos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">100%</div>
+                    <div class="text-lg">Personalizado</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">24/7</div>
+                    <div class="text-lg">Suporte humano</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">500+</div>
+                    <div class="text-lg">Clientes satisfeitos</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">50+</div>
+                    <div class="text-lg">Profissionais</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossos <span class="text-blue-500">Serviços</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Plataforma digital de treinos e dietas personalizados com atendimento profissional real.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Personal Trainer Digital</h3>
+                    <p class="text-gray-600">Treinos personalizados elaborados por um personal trainer real, com ajustes conforme sua evolução.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Nutrição Personalizada</h3>
+                    <p class="text-gray-600">Planos alimentares criados por nutricionistas, considerando suas preferências e restrições.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Agendamento de Consultas</h3>
+                    <p class="text-gray-600">Marque consultas online com nossos profissionais quando precisar de orientação adicional.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Acompanhamento de Progresso</h3>
+                    <p class="text-gray-600">Monitoramento completo do seu desenvolvimento com relatórios mensais e ajustes no plano.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Suporte via Chat</h3>
+                    <p class="text-gray-600">Tire dúvidas diretamente com nossos profissionais quando precisar, sem respostas automatizadas.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Acesso Multiplataforma</h3>
+                    <p class="text-gray-600">Acesse seus planos de treino e nutrição pelo computador, tablet ou smartphone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiators Section -->
+    <section id="diferenciais" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">O que nos <span class="text-blue-500">diferencia</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Não somos mais um app fitness genérico. Oferecemos atendimento humano e personalização total.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Personal trainer" class="rounded-xl shadow-xl w-full">
+                        <div class="absolute -bottom-6 -right-6 bg-blue-500 text-white p-6 rounded-xl shadow-lg">
+                            <div class="text-2xl font-bold">✅</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Atendimento real (não é IA ou robô)</h3>
+                                <p class="text-gray-600">Interação direta com profissionais qualificados, sem respostas automatizadas ou genéricas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Integração de treino + dieta + consulta</h3>
+                                <p class="text-gray-600">Tudo em um só lugar, com planos que se complementam para otimizar seus resultados.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Personalização profunda</h3>
+                                <p class="text-gray-600">Planos adaptados às suas necessidades específicas, objetivos, rotina e preferências.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Acessível, remoto e escalável</h3>
+                                <p class="text-gray-600">Qualidade profissional a um preço acessível, disponível onde e quando você precisar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section id="solucao" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">O problema que <span class="text-blue-500">resolvemos</span></h2>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-times text-red-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Falta de personalização</h3>
+                                <p class="text-gray-600">Apps de treino e dieta genéricos que não consideram suas necessidades individuais.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-times text-red-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Distanciamento profissional</h3>
+                                <p class="text-gray-600">Plataformas digitais que afastam o contato humano entre profissionais e clientes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-times text-red-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Dificuldade em manter consistência</h3>
+                                <p class="text-gray-600">Planos genéricos que não motivam ou se adaptam à sua evolução.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-times text-red-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Acesso limitado</h3>
+                                <p class="text-gray-600">Dificuldade em marcar consultas com nutricionistas e treinadores qualificados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h2 class="text-3xl font-bold mb-6 text-center">Nossa <span class="text-blue-500">Solução</span></h2>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-check text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Perfil completo</h3>
+                                    <p class="text-gray-600">Preencha informações detalhadas sobre seus objetivos, restrições e rotina.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-check text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Treinos personalizados</h3>
+                                    <p class="text-gray-600">Receba planos de treino elaborados por um personal trainer real.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-check text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Agenda de consultas</h3>
+                                    <p class="text-gray-600">Marque consultas online com nutricionistas quando precisar.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-check text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Acompanhamento de progresso</h3>
+                                    <p class="text-gray-600">Receba ajustes mensais feitos por profissionais baseados na sua evolução.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-check text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Suporte via chat</h3>
+                                    <p class="text-gray-600">Tire dúvidas diretamente com os especialistas quando precisar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <a href="#cadastro" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">Experimente agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Para quem é o <span class="text-blue-500">FitSync</span>?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Nosso público-alvo e como podemos ajudá-los.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Adultos 18-50 anos</h3>
+                    <p class="text-gray-600">Foco em saúde e estética, buscando melhorar qualidade de vida e aparência física.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Usuários de apps fitness</h3>
+                    <p class="text-gray-600">Insatisfeitos com a falta de personalização em plataformas existentes.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Restrições específicas</h3>
+                    <p class="text-gray-600">Pessoas com necessidades como reabilitação, emagrecimento ou hipertrofia.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Profissionais ocupados</h3>
+                    <p class="text-gray-600">Que têm pouco tempo e preferem praticidade de atendimento online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossa <span class="text-blue-200">Proposta de Valor</span></h2>
+                <p class="text-lg max-w-2xl mx-auto">O que torna o FitSync único no mercado de fitness digital.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm border border-white border-opacity-20">
+                    <div class="text-4xl mb-4">👨‍⚕️</div>
+                    <h3 class="text-xl font-bold mb-4">Acesso real a profissionais</h3>
+                    <p>Sem robôs ou respostas genéricas. Interação direta com especialistas qualificados.</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm border border-white border-opacity-20">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold mb-4">Planos atualizados</h3>
+                    <p>Ajustes conforme sua evolução, mantendo sempre o desafio adequado.</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm border border-white border-opacity-20">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-4">Facilidade de uso</h3>
+                    <p>Plataforma intuitiva, acessível de qualquer dispositivo, a qualquer hora.</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm border border-white border-opacity-20">
+                    <div class="text-4xl mb-4">📅</div>
+                    <h3 class="text-xl font-bold mb-4">Consultas agendadas</h3>
+                    <p>Prontuários integrados e facilidade para marcar atendimentos com especialistas.</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm border border-white border-opacity-20">
+                    <div class="text-4xl mb-4">💪</div>
+                    <h3 class="text-xl font-bold mb-4">Treino + dieta integrados</h3>
+                    <p>Tudo em um só lugar, com planos que se complementam para melhores resultados.</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm border border-white border-opacity-20">
+                    <div class="text-4xl mb-4">❤️</div>
+                    <h3 class="text-xl font-bold mb-4">Motivação constante</h3>
+                    <p>Acompanhamento humano que mantém você engajado e comprometido com seus objetivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossos <span class="text-blue-500">Planos</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Modelo de assinatura flexível com pacotes avulsos de consultas.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="pricing-card bg-white p-8 rounded-xl shadow-md border border-gray-200 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4">Básico</h3>
+                    <div class="text-4xl font-bold mb-4">R$99<span class="text-lg text-gray-500">/mês</span></div>
+                    <p class="text-gray-600 mb-6">Ideal para quem busca orientação inicial.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>1 consulta mensal com personal</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Plano de treino personalizado</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Dieta básica</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times text-gray-400 mr-2"></i>
+                            <span>Suporte via chat</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times text-gray-400 mr-2"></i>
+                            <span>Consultas com nutricionista</span>
+                        </li>
+                    </ul>
+                    <a href="#cadastro" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 text-center py-3 rounded-lg font-medium transition">Assinar</a>
+                </div>
+                
+                <div class="pricing-card bg-white p-8 rounded-xl shadow-xl border-2 border-blue-500 transform scale-105 transition duration-300 relative">
+                    <div class="absolute top-0 right-0 bg-blue-500 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-bold">MAIS POPULAR</div>
+                    <h3 class="text-2xl font-bold mb-4">Premium</h3>
+                    <div class="text-4xl font-bold mb-4">R$179<span class="text-lg text-gray-500">/mês</span></div>
+                    <p class="text-gray-600 mb-6">O plano completo para melhores resultados.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>2 consultas mensais com personal</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Plano de treino personalizado</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Dieta personalizada</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Suporte via chat</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>1 consulta com nutricionista</span>
+                        </li>
+                    </ul>
+                    <a href="#cadastro" class="block w-full gradient-bg hover:opacity-90 text-white text-center py-3 rounded-lg font-medium transition shadow-md">Assinar</a>
+                </div>
+                
+                <div class="pricing-card bg-white p-8 rounded-xl shadow-md border border-gray-200 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4">Vip</h3>
+                    <div class="text-4xl font-bold mb-4">R$299<span class="text-lg text-gray-500">/mês</span></div>
+                    <p class="text-gray-600 mb-6">Acompanhamento premium e exclusivo.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Consultas ilimitadas com personal</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Plano de treino personalizado</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Dieta personalizada premium</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Suporte via chat prioritário</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>4 consultas com nutricionista</span>
+                        </li>
+                    </ul>
+                    <a href="#cadastro" class="block w-full bg-gray-800 hover:bg-gray-900 text-white text-center py-3 rounded-lg font-medium transition">Assinar</a>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">Também oferecemos pacotes avulsos de consultas e planos trimestrais/anuais com desconto.</p>
+                <a href="#contato" class="text-blue-500 hover:text-blue-600 font-medium">Fale conosco para mais informações</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nosso <span class="text-blue-500">Marketing</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Como divulgamos e engajamos nossa comunidade.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-users text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Influenciadores fitness</h3>
+                                <p class="text-gray-600">Parcerias com influenciadores e profissionais da área para divulgação autêntica.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-photo-video text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Conteúdo de valor</h3>
+                                <p class="text-gray-600">Materiais educativos e dicas nas redes sociais (Instagram, TikTok, YouTube).</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-trophy text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Programa de indicação</h3>
+                                <p class="text-gray-600">Gamificação e recompensas para clientes que indicam novos usuários.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-video text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Lives com especialistas</h3>
+                                <p class="text-gray-600">Transmissões ao vivo com nutricionistas e personal trainers para engajamento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Nossa <span class="text-blue-500">Diferenciação</span></h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start bg-white p-4 rounded-lg shadow-xs">
+                                <div class="flex-shrink-0 bg-red-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-times text-red-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Concorrentes</h4>
+                                    <p class="text-gray-600 text-sm">MyFitnessPal, Freeletics, Nike Training Club, Gympass - soluções automatizadas e genéricas.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start bg-white p-4 rounded-lg shadow-xs">
+                                <div class="flex-shrink-0 bg-green-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check text-green-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">FitSync</h4>
+                                    <p class="text-gray-600 text-sm">Atendimento humano, personalização profunda e integração completa entre treino e nutrição.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-3">Siga-nos nas redes sociais:</h4>
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team/Structure Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossa <span class="text-blue-500">Estrutura</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">A equipe por trás da plataforma FitSync.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                    <div class="w-24 h-24 gradient-bg rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Desenvolvimento</h3>
+                    <p class="text-gray-600">Desenvolvedores e UX designers para plataforma e app móvel.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                    <div class="w-24 h-24 gradient-bg rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-4">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Profissionais</h3>
+                    <p class="text-gray-600">Time de personal trainers e nutricionistas credenciados.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                    <div class="w-24 h-24 gradient-bg rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Suporte</h3>
+                    <p class="text-gray-600">Equipe dedicada ao atendimento e suporte ao cliente.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                    <div class="w-24 h-24 gradient-bg rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-4">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Marketing</h3>
+                    <p class="text-gray-600">Criação de conteúdo e estratégias de divulgação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para transformar sua saúde e fitness?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Junte-se a milhares de pessoas que já alcançaram seus objetivos com o FitSync.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#cadastro" class="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg">Comece agora - 7 dias grátis</a>
+                <a href="#planos" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg">Ver planos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Fale <span class="text-blue-500">conosco</span></h2>
+                    <p class="text-lg text-gray-600 mb-8">Tem dúvidas ou precisa de mais informações? Nossa equipe está pronta para ajudar.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Email</h3>
+                                <p class="text-gray-600">contato@fitsync.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Telefone</h3>
+                                <p class="text-gray-600">(11) 1234-5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Endereço</h3>
+                                <p class="text-gray-600">Av. Paulista, 1000 - São Paulo/SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <form class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Assunto</label>
+                            <select id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option>Selecione um assunto</option>
+                                <option>Dúvidas sobre planos</option>
+                                <option>Suporte técnico</option>
+                                <option>Parcerias</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full gradient-bg hover:opacity-90 text-white py-3 rounded-lg font-medium transition shadow-md">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Perguntas <span class="text-blue-500">Frequentes</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Tire suas dúvidas sobre o FitSync.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                            <span>Como funciona o atendimento com os profissionais?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="mt-4 text-gray-600 hidden">
+                            <p>Nossos profissionais estão disponíveis para criar seus planos personalizados, realizar consultas agendadas e responder suas dúvidas via chat. Tudo é feito de forma remota, mas com o mesmo cuidado e atenção que um atendimento presencial.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                            <span>Posso cancelar a qualquer momento?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="mt-4 text-gray-600 hidden">
+                            <p>Sim, você pode cancelar sua assinatura a qualquer momento sem taxas ou multas. Se optar por um plano anual com desconto, o valor será rateado conforme os meses utilizados.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                            <span>Como são criados os planos de treino e dieta?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="mt-4 text-gray-600 hidden">
+                            <p>Após preencher seu perfil completo com objetivos, restrições e rotina, um profissional qualificado elabora seu plano personalizado. Ele será ajustado mensalmente conforme sua evolução e feedback.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                            <span>O FitSync substitui uma academia ou nutricionista presencial?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="mt-4 text-gray-600 hidden">
+                            <p>O FitSync oferece a mesma qualidade de um atendimento presencial, com a vantagem da praticidade e acessibilidade. Para casos específicos que exigem acompanhamento presencial, nossos profissionais podem indicar a melhor abordagem.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                            <span>Quais são as formas de pagamento aceitas?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="mt-4 text-gray-600 hidden">
+                            <p>Aceitamos cartões de crédito (todas as bandeiras), débito automático, PIX e boleto bancário. Para pacotes avulsos, também aceitamos transferência bancária.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-dumbbell text-blue-400 text-2xl"></i>
+                        <span class="text-xl font-bold text-white">FitSync</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Fitness & Nutrição Personalizada com atendimento humano e personalizado.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center text-gray-300 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center text-gray-300 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center text-gray-300 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center text-gray-300 hover:text-white transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Links úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sobre nós</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Nossos profissionais</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Depoimentos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Planos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Assinatura mensal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Plano trimestral</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Plano anual</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pacotes avulsos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Para empresas</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-gray-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Av. Paulista, 1000 - São Paulo/SP</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-gray-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">(11) 1234-5678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-gray-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">contato@fitsync.com.br</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-gray-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Seg-Sex: 8h-20h / Sáb: 8h-14h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 FitSync. Todos os direitos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Termos de uso</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Política de privacidade</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
