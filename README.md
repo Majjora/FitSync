@@ -45,7 +45,7 @@
    cd FitSync
    ```
 
-3. Abra o arquivo `login.html` em seu navegador (ou use extensões como **Live Server** no VSCode para facilitar o desenvolvimento).
+3. Abra o arquivo `index.html` em seu navegador (ou use extensões como **Live Server** no VSCode para facilitar o desenvolvimento).
 
 ## 🎯 Próximos Passos (Futuras melhorias)
 
